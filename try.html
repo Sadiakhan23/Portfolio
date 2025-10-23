@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sadia's Data Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #34495e;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+
+    .left-panel {
+      flex: 1 1 300px;
+      background-color: #2c3e50;
+      color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .left-panel h2 {
+      margin-top: 0;
+      color: #ffffff;
+    }
+
+    .right-panel {
+      flex: 2 1 600px;
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 20px;
+    }
+
+    .skills {
+      font-style: italic;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2c3e50;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sadia's Data Portfolio</h1>
+    <p>Transforming data into insights with Power BI, Python, and SQL</p>
+  </header>
+
+  <nav>
+    <strong><a href="index.html">Project Details</a> |</strong>
+    <strong><a href="Power BI Dashboard.html">Power BI Dashboard</a> |</strong>
+    <strong><a href="try.html">Python Projects</a> |</strong>
+    <strong><a href="sql.html">SQL Activities</a></strong>
+  </nav>
+
+  <div class="container">
+    <div class="left-panel">
+      <h2>About Me</h2>
+      <p>
+        Hi, I’m <b>Sadia</b><br><br>
+        A data enthusiast with a passion for transforming complexity into clarity. With a strong foundation in <b>Python, SQL, Power BI, and statistical analysis</b>, I thrive on uncovering actionable insights and crafting visual narratives that resonate.<br><br>
+        Whether I’m building dynamic dashboards in Power BI, optimizing queries for financial datasets, or diving into Python challenges to sharpen my edge, I’m constantly pushing the boundaries of what data can reveal.<br><br>
+        I believe data isn’t just about numbers—it’s about storytelling, problem-solving, and driving smarter decisions.<br><br>
+        Let’s connect and turn data into impact.
+      </p>
+    </div>
+
+    <div class="right-panel">
+       <h2>📁 Project 1: UK Crime Data Analysis</h2>
+  <p><strong>Tools:</strong> Python (Pandas, NumPy), Power BI, SQL</p>
+  <ul>
+    <li>Analyzed crime patterns across UK boroughs using public datasets from the UK Police API and local councils</li>
+    <li>Performed data cleaning, geospatial mapping, and time-based feature extraction</li>
+    <li>Built interactive Power BI dashboards to visualize hotspots and resolution rates</li>
+    <li>Applied clustering and forecasting techniques to support patrol planning and resource allocation</li>
+  </ul>
+  <iframe src="crime.ipynb - Colab.pdf" width="100%" height="600px"></iframe>
+<a href=https://colab.research.google.com/drive/15eVmm8n3GCYMFMCFUhWrEek4ncVLvnfv#scrollTo=8RU3mEvcmzQh target="_blank">View Code</a>
+<br>
+<br>
+  
+  
+
+  <hr style="margin:40px 0;">
+
+  <h2>📁 Project 2: Customer Churn Analysis</h2>
+  <p><strong>Tools:</strong> Python (Scikit-learn, Matplotlib, Seaborn), Power BI</p>
+    <ul>
+    <li>Explored churn drivers using customer data from Kaggle (tenure, support calls, payment delays)</li>
+    <li>Performed one-hot encoding, normalization, and correlation analysis</li>
+    <li>Segmented customers by churn risk using K-Means clustering</li>
+    <li>Created Power BI dashboards for stakeholder walkthroughs and retention strategy planning</li>
+  </ul>
+  <iframe src="churn analysis.pdf" width="100%" height="600px"></iframe>
+<a href=https://colab.research.google.com/drive/1rcyzyIKRl_WUXQ6eHi0XdgvCgrkey0Wl#scrollTo=hwGAuFA37ljj target="_blank">View Code</a>
+<br>
+<br>
+
+
+
+
+    
+
+      
+<h2>Project 3: Exploratory Data Analysis (EDA) on Sales Data </h2>
+      <iframe src="Project 1_ Exploratory Data Analysis (EDA) on Sales Data - Colab.pdf" width="100%" height="600px"></iframe>
+<a href=https://colab.research.google.com/drive/1NtHys6PLBehevX79rvOfgq9PeHgUiIXW#scrollTo=gDrFfuWq1iYF target="_blank">View Code</a>
+<br>
+<br>
+      <h2>Project 4: Data Cleaning & Visualsation US for Census Data </h2>
+<p>
+🧹 US Census Data Cleaning & Visualization
+This project focuses on transforming raw census data into meaningful insights through meticulous cleaning and visual storytelling. The dataset includes demographic, income, and population statistics across various US states.
+Key tasks included:
+- Data Wrangling: Merged multiple CSV files, corrected mislabeled columns, handled missing values, and standardized formats using Python (Pandas and Regex).
+- Feature Extraction: Parsed complex fields like gender splits and income brackets to create usable variables.
+- Visualization: Built scatterplots, histograms, and bar charts using Matplotlib and Seaborn to highlight trends in income, gender distribution, and racial demographics across states.
+📊 The result is a clean, structured dataset and a suite of visualizations that reveal patterns in population makeup, income disparities, and regional differences—empowering data-driven decisions and deeper understanding of US demographics.
+</p>
+
+
+<iframe src="census data].ipynb - Colab.pdf" width="100%" height="600px"></iframe>
+<a href="https://colab.research.google.com/drive/1zzsOO3n8CC2KuZzSr6uwWsLu0_hzeTi9#scrollTo=T8Lh5GNqIYyJ" target="_blank">View Code</a>
+<br>
+<br>
+<h2>Project 5: Data Cleaning for Mobile Phone Price Prediction Data</h2>
+<iframe src="Mobile Phone Data Analysis for analysis.ipynb - Colab.pdf" width="100%" height="600px"></iframe>
+<a href=https://colab.research.google.com/drive/1-GGmbR-MaomXu5MkhUyd-CyqI6XMVaDc target="_blank">View Code</a>
+<br>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Sadia | Data Analyst Portfolio</p>
+  </footer>
+
+</body>
+
+</html>

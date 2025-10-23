@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sadia's Data Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #34495e;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+
+    .left-panel {
+      flex: 1 1 300px;
+      background-color: #2c3e50;
+      color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .left-panel h2 {
+      margin-top: 0;
+      color: #ffffff;
+    }
+
+    .right-panel {
+      flex: 2 1 600px;
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 20px;
+    }
+
+    .skills {
+      font-style: italic;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2c3e50;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sadia's Data Portfolio</h1>
+    <p>Transforming data into insights with Power BI, Python, and SQL</p>
+  </header>
+
+  <nav>
+    <strong><a href="index.html">Project Details</a> |</strong>
+    <strong><a href="Power BI Dashboard.html">Power BI Dashboard</a> |</strong>
+    <strong><a href="try.html">Python Projects</a> |</strong>
+    <strong><a href="sql.html">SQL Activities</a></strong>
+  </nav>
+
+  <div class="container">
+    <div class="left-panel">
+      <h2>About Me</h2>
+      <p>
+        Hi, I’m <b>Sadia</b><br><br>
+        A data enthusiast with a passion for transforming complexity into clarity. With a strong foundation in <b>Python, SQL, Power BI, and statistical analysis</b>, I thrive on uncovering actionable insights and crafting visual narratives that resonate.<br><br>
+        Whether I’m building dynamic dashboards in Power BI, optimizing queries for financial datasets, or diving into Python challenges to sharpen my edge, I’m constantly pushing the boundaries of what data can reveal.<br><br>
+        I believe data isn’t just about numbers—it’s about storytelling, problem-solving, and driving smarter decisions.<br><br>
+        Let’s connect and turn data into impact.
+      </p>
+    </div>
+
+    <div class="right-panel">
+      <h2>Crime Analytics Project</h2>
+      <img src="crime dashboard.png" alt="Crime Analytics Dashboard" style="width:100%; border-radius:8px; margin-bottom:20px; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+      
+      <h3>1. Problem Definition & Objective</h3>
+
+
+      <h3>1. Problem Definition & Objective</h3>
+      <ul>
+        <li><strong>Key Question:</strong> What are the patterns and hotspots of criminal activity across different regions, and how can predictive analytics help allocate police resources more effectively?</li>
+        <li><strong>Business Importance:</strong> Data-driven insights to reduce crime rates, improve response times, and optimize patrol planning.</li>
+        <li><strong>Objectives:</strong>
+          <ul>
+            <li>Identify high-crime zones and temporal spikes.</li>
+            <li>Test correlation between socio-economic factors and crime types.</li>
+            <li>Predict future crime likelihood based on historical patterns.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>📊 2. Data Collection & Cleaning</h3>
+      <ul>
+        <li><strong>Source:</strong> UK Police API and local council crime reports.</li>
+        <li><strong>Data Type:</strong> Incident-level data (type, location, date/time, outcome).</li>
+        <li><strong>Cleaning Steps:</strong>
+          <ul>
+            <li>Removed duplicates and standardized location formats.</li>
+            <li>Handled missing values.</li>
+            <li>Converted timestamps and extracted time features.</li>
+            <li>Merged with socio-economic data (e.g. deprivation index).</li>
+          </ul>
+        </li>
+        <li><strong>Tools Used:</strong> Python (Pandas, NumPy), Excel, SQL.</li>
+      </ul>
+
+      <h3>3. Exploratory Data Analysis (EDA)</h3>
+      <ul>
+        <li><strong>Techniques:</strong> Summary stats, frequency distributions, geospatial plots.</li>
+        <li><strong>Key Variables:</strong> Crime type, location, time of day, resolution status.</li>
+        <li><strong>Findings:</strong>
+          <ul>
+            <li>Theft and anti-social behaviour peaked in urban zones during weekends.</li>
+            <li>Violent crimes spiked in summer months.</li>
+            <li>Some boroughs had low resolution rates.</li>
+          </ul>
+        </li>
+        <li><strong>Visuals:</strong> Heatmaps, time series plots, Power BI dashboard.</li>
+      </ul>
+
+      <h3>4. Stakeholder Collaboration</h3>
+      <ul>
+        <li><strong>Stakeholders:</strong> Council analysts, safety officers, community teams.</li>
+        <li><strong>Presentation:</strong> Power BI dashboard and summary report.</li>
+        <li><strong>Communication Style:</strong>
+          <ul>
+            <li>Plain language and visuals for non-technical users.</li>
+            <li>Technical appendix with SQL and Python scripts.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>5. Analytical Methods & Tools</h3>
+      <ul>
+        <li><strong>Approaches:</strong>
+          <ul>
+            <li>K-means clustering for hotspots.</li>
+            <li>ARIMA forecasting for crime prediction.</li>
+            <li>Correlation analysis with socio-economic indicators.</li>
+          </ul>
+        </li>
+        <li><strong>Tools:</strong> Python (scikit-learn, statsmodels, matplotlib), Power BI, SQL.</li>
+        <li><strong>Rationale:</strong> Clustering for spatial patterns, forecasting for planning, Power BI for engagement.</li>
+      </ul>
+
+      <h3>6. Time & Resource Management</h3>
+      <ul>
+        <li><strong>Timeframe:</strong> 4 weeks.</li>
+        <li><strong>Constraints:</strong> Incomplete location data, limited real-time updates.</li>
+        <li><strong>Work Structure:</strong>
+          <ul>
+            <li>Week 1: Data acquisition and cleaning.</li>
+            <li>Week 2: EDA and stakeholder check-in.</li>
+            <li>Week 3: Modeling and dashboard development.</li>
+            <li>Week 4: Final review and delivery.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>7. Outcomes & Impact</h3>
+      <ul>
+        <li><strong>Insights:</strong>
+          <ul>
+            <li>Top 5 high-risk zones accounted for 40% of crimes.</li>
+            <li>Strong correlation with deprivation scores.</li>
+          </ul>
+        </li>
+        <li><strong>Actions:</strong>
+          <ul>
+            <li>Targeted patrols and outreach programs launched.</li>
+          </ul>
+        </li>
+        <li><strong>Impact:</strong>
+          <ul>
+            <li>18% improvement in resolution rates over 3 months.</li>
+            <li>Dashboard adopted for monthly crime reviews.</li>
+          </ul>
+        </li>
+      </ul>
+    
+  
+    <h2>Customer Churn Analytics Project</h2>
+
+    <img src="churna.png" alt="Crime Analytics Dashboard" style="width:100%; border-radius:8px; margin-bottom:20px; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+      
+    <h3>1. Problem Definition & Objective</h3>  
+    
+    <ul>
+    <li><strong>Key Question:</strong> What factors are driving customer churn, and how can we predict and reduce churn to improve retention?</li>
+    <li><strong>Business Importance:</strong> Churn impacts recurring revenue, customer lifetime value, and acquisition costs. Understanding churn helps prioritise effective retention strategies and optimise the customer experience.</li>
+    <li><strong>Objectives/Hypotheses:</strong>
+      <ul>
+        <li>Identify key predictors of churn (e.g. tenure, support calls, payment delays).</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>2. Data Collection & Cleaning</h3>
+  <ul>
+    <li><strong>Source:</strong> Kaggle</li>
+    <li><strong>Data Type:</strong> Integer and String</li>
+    <li><strong>Data Variables:</strong> CustomerID, Age, Gender, Tenure, Usage Frequency, Support Calls, Payment Delay, Subscription Type, Contract Length, Total Spend, Last Interaction, Churn</li>
+    <li><strong>Cleaning Steps:</strong>
+      <ul>
+        <li>Checked for missing values in Total Spend, Last Interaction, and Payment Delay.</li>
+        <li>Encoded categorical variables using one-hot or label encoding.</li>
+        <li>Normalised numerical features like Usage Frequency and Total Spend.</li>
+        <li>Removed duplicates and ensured consistent data types.</li>
+      </ul>
+    </li>
+    <li><strong>Tools Used:</strong> Python (Pandas, NumPy)</li>
+  </ul>
+
+  <h3>3. Exploratory Data Analysis (EDA)</h3>
+  <ul>
+    <li><strong>Initial Exploration:</strong> Summary statistics, distribution plots, and correlation matrices.</li>
+    <li><strong>Key Variables Examined:</strong> Tenure, Usage Frequency, Support Calls, Payment Delay, Contract Length, Total Spend</li>
+    <li><strong>Findings:</strong>
+      <ul>
+        <li>Short tenures and frequent support calls linked to higher churn.</li>
+        <li>Month-to-month contracts and delayed payments were strong churn indicators.</li>
+        <li>High Total Spend correlated with lower churn, suggesting value perception.</li>
+      </ul>
+    </li>
+    <li><strong>Visuals Created:</strong>
+      <ul>
+        <li>Churn rate by contract type and tenure.</li>
+        <li>Boxplots for spend vs churn.</li>
+        <li>Heatmap of feature correlations.</li>
+        <li>Power BI dashboard for stakeholder walkthrough.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>4. Stakeholder Collaboration & Communication</h3>
+  <ul>
+    <li><strong>Stakeholders:</strong> Marketing, Customer Success, Product, and Data Strategy teams.</li>
+    <li><strong>Presentation Format:</strong>
+      <ul>
+        <li>Executive summary report with actionable insights.</li>
+        <li>Interactive dashboard (Power BI) for churn segmentation.</li>
+        <li>Slide deck for cross-functional review.</li>
+      </ul>
+    </li>
+    <li><strong>Communication Strategy:</strong>
+      <ul>
+        <li>Simplified churn drivers for non-technical teams.</li>
+        <li>Technical appendix for data science peers.</li>
+        <li>Recommendations tailored to departmental goals (e.g. retention campaigns, product tweaks).</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>5. Analytical Methods & Tools Used</h3>
+  <ul>
+    <li><strong>Approach:</strong> K-Means clustering to segment customers by churn risk profiles.</li>
+    <li><strong>Tools:</strong> Python (Scikit-learn, Matplotlib, Seaborn), Power BI</li>
+    <li><strong>Rationale:</strong> Balanced interpretability and performance for actionable insights and stakeholder trust.</li>
+  </ul>
+
+  <h3>6. Time & Resource Management</h3>
+  <ul>
+    <li><strong>Timeframe:</strong> 3–4 weeks total</li>
+    <li><strong>Work Structure:</strong>
+      <ul>
+        <li>Week 1: Data cleaning and EDA</li>
+        <li>Week 2: Modelling and validation</li>
+        <li>Week 3: Dashboard creation and stakeholder review</li>
+        <li>Week 4: Final reporting and recommendations</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>7. Outcomes & Impact</h3>
+  <ul>
+    <li><strong>Key Insights:</strong>
+      <ul>
+        <li>Top churn predictors: short contract length, frequent support calls, payment delays.</li>
+        <li>High usage but low tenure customers were at risk—suggesting onboarding gaps.</li>
+      </ul>
+    </li>
+    <li><strong>Recommended Actions:</strong>
+      <ul>
+        <li>Marketing launched retention campaigns for short-tenure customers.</li>
+        <li>Customer Success prioritised proactive outreach for high-risk segments.</li>
+        <li>Product team explored contract redesigns to incentivize longer commitments.</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+</div>
+</div>
+
+  <footer>
+    <p>© 2025 Sadia | Data Analyst Portfolio</p>
+  </footer>
+
+</body>
+
+</html>
